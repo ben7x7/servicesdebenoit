@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get 'mentions',         to: 'pages#mentions',           as: :mentions
   get 'confidentialite',  to: 'pages#confidentialite',    as: :confidentialite
 
-  #resources :services, only: [ :new, :create, :index, :show ]
+  resources :services, only: [ :new, :create, :index, :show ]
 end
 
 
