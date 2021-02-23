@@ -1,12 +1,48 @@
-.navbar-lewagon {
+.my-navbar {
+  display: flex;
   justify-content: space-between;
-  background: white;
+  align-items: center;
+  background-color: $dark-gray;
+  height: 10vh;
+  position: sticky;
+  top: 0;
+  margin: 0 auto;
+  padding: 0 0;
+  z-index: 1000;
 }
-
-.navbar-lewagon .navbar-collapse {
+.my-navbar .navbar-collapse {
   flex-grow: 0;
 }
-
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.navbar-brand {
+  padding-left: 40px;
+  display: flex;
+  align-items: center;
 }
+#nav-logo {
+  padding:0 10px 0 10px;
+  height: 30px;
+}
+#brand {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 24px;
+  color: $orange;
+}
+.nav-link {
+  letter-spacing: 2px;
+  color: $light-gray;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+}
+a.nav-link {
+  margin-right: 40px;
+}
+a.nav-link:hover {
+  color: $orange;
+  font-weight: bold;
+  border-bottom: solid 3px $orange;
+}
+button.navbar-toggler {
+  color: #F1E4D3 !important;
+}
+
