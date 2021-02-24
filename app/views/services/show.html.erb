@@ -13,6 +13,12 @@
       <div class="service-examples">
         <p>La prestation comprend selon le cas échéant:</p>
 
+        <ul class="list-group">
+          <% @service.activities.each do |activity| %>
+            <li class="list-group-item"><%= activity.sample %></li>
+          <% end %>
+        </ul>
+
         <p><%= @service.conditions %></p>
       </div>
     </div>
