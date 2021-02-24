@@ -1,0 +1,10 @@
+<div class="wrap-services">
+  <%= @services.each do |service|%>
+    <%= link_to restaurant_path(restaurant) do %>
+      <div class="service-card">
+        <%= @service.logo %>
+        <%= @service.name %>
+      </div>
+    <% end %>
+  <% end %>
+</div>

@@ -1,0 +1,14 @@
+<div class="container-service">
+  <h1>Register a new service</h1>
+  <div class="wrap-service-form">
+    <%= simple_form_for(restaurant) do |f| %>
+      <%= f.input :name %>
+      <%= f.input :fullname %>
+      <%= f.input :logo, as: :file %>
+      <%= f.input :image, as: :file %>
+      <%= f.input :definition %>
+      <%= f.input :conditions %>
+      <%= f.submit %>
+    <% end %>
+  </div>
+</div>
