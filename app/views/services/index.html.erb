@@ -2,7 +2,7 @@
   <%= @services.each do |service|%>
     <%= link_to restaurant_path(restaurant) do %>
       <div class="service-card">
-        <%= @service.logo %>
+        <%= cl_image_path @service.logo.key, height: 80, width: 80 %>
         <%= @service.name %>
       </div>
     <% end %>

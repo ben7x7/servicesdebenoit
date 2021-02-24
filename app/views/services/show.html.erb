@@ -2,7 +2,7 @@
   <div class="service-info">
     <div class="service-header">
       <div class="service-img">
-        <%= cl_image_tag @service.image.key %>
+        <%= cl_image_tag @service.image.key, height: 200, width: 170 %>
       </div>
       <h1 class="service-id"><%= @service.fullname %></h1>
     </div>
