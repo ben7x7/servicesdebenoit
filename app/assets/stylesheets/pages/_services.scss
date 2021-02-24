@@ -1,1 +1,58 @@
+.container-service {
+  background-color: $cream;
+  padding: 30px 0;
+}
+.service-info {
+  margin: 0 auto;
+  padding: 40px 40px;
+  max-width: 800px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow:
+    0 1.4px 1.8px rgba(0, 0, 0, 0.046),
+    0 3.8px 5px rgba(0, 0, 0, 0.055),
+    0 9px 12.1px rgba(0, 0, 0, 0.073),
+    0 30px 40px rgba(0, 0, 0, 0.2);
+}
+.service-header {
+  display: flex;
+  align-items: center;
+}
+.service-id {
+  font-size: 36px !important;
+  font-weight: 800 !important;
+  padding: 0 30px !important;
+  text-align: center;
+}
+.service-details {
+  margin: 30px 0 ;
+  padding: 30px 0 14px 0;
+  border-top: solid 3px $orange;
+  border-bottom: solid 3px $orange;
+  color: #9B9B9B;
+  font-style: italic;
+  font-weight: bold;
+  text-align: justify;
+}
+.service-examples ul {
+  margin-left: 30px;
+}
+.service-examples ul li {
+  font-size: 18px;
+}
+.service-examples {
+  padding-bottom: 40px;
+}
+.btn-return {
+  padding: 10px 20px;
+  border: solid 2px $dark-gray;
+  border-radius: 5px;
+  color: $orange;
+  font-weight: bold;
+}
+.btn-return:hover {
+  background-color: $orange;
+  color: white;
+  text-decoration: none;
+}
 

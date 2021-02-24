@@ -19,4 +19,5 @@ class ActivitiesController < ApplicationController
 
   def activity_params
     params.require(:activity).permit(:sample)
+  end
 end
