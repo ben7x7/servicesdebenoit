@@ -11,7 +11,8 @@
         <p><%= @service.definition %></p>
       </div>
       <div class="service-examples">
-        <p>La prestation comprend selon le cas échéant:</p>
+        <p class="option"><%= @service.option %></p>
+        <p><%= @service.presample %></p>
 
         <ul>
           <% @service.activities.each do |activity| %>
@@ -19,7 +20,7 @@
           <% end %>
         </ul>
         <br>
-        <p><%= @service.conditions %></p>
+        <p><%= @service.conditions %>: <strong><%= @service.plafond %></strong></p>
       </div>
     </div>
     <div class="text-center">
