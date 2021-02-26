@@ -1,7 +1,7 @@
 class ServicesController < ApplicationController
 
   def index
-    @services = Service.all
+
   end
 
   def show
@@ -17,13 +17,6 @@ class ServicesController < ApplicationController
     @service.save
 
     redirect_to service_path(service)
-  end
-
-  def destroy
-    @service = Service.find(params[:id])
-    @service.destroy
-
-    redirect_to services_path
   end
 
   private

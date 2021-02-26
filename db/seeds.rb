@@ -12,7 +12,7 @@
  Service.destroy_all
  Activity.destroy_all
 
- puts 'creating seed for service'
+ puts 'creating seeds services & activities'
 
 service1 = Service.create!(
   name: 'Assistance Administrative',
@@ -34,9 +34,6 @@ service1.image.attach(
   content_type: 'image/png'
 )
 
-
-
-
 service2 = Service.create!(
   name: 'Assistance Informatique',
   fullname: 'ASSISTANCE INFORMATIQUE À DOMICILE',
@@ -56,10 +53,6 @@ service2.image.attach(
   filename: 'assistance_informatique.png',
   content_type: 'image/png'
 )
-
-
-
-
 
 service3 = Service.create!(
   name: 'Petit Bricolage',
@@ -81,9 +74,6 @@ service3.image.attach(
   content_type: 'image/png'
 )
 
-
-
-
 service4 = Service.create!(
   name: 'Courses & Livraisons',
   fullname: 'COURSES & LIVRAISONS',
@@ -104,9 +94,6 @@ service4.image.attach(
   content_type: 'image/png'
 )
 
-
-
-
 service5 = Service.create!(
   name: 'Vigilance du Domicile',
   fullname: 'VIGILANCE DU DOMICILE EN VOTRE ABSENCE',
@@ -126,7 +113,6 @@ service5.image.attach(
   filename: 'vigilance_du_domicile.png',
   content_type: 'image/png'
 )
-
 
 activity1 = Activity.create!(sample:'Au traitement et classement de documents;', service: service1)
 activity2 = Activity.create!(sample:'Au suivi de factures;', service: service1)
@@ -153,7 +139,5 @@ activity17 = Activity.create!(sample:'Arrosage des plantes;', service: service5)
 activity18 = Activity.create!(sample:'Relève du courrier;', service: service5)
 activity19 = Activity.create!(sample:'Garde d\'animaux;', service: service5)
 activity20 = Activity.create!(sample:'Simulation de présence.', service: service5)
-
-
 
  puts 'seed completed'

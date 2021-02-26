@@ -24,12 +24,7 @@
       </div>
     </div>
     <div class="text-center">
-      <%= link_to 'New Activity', new_service_activity_path(@service) %>
       <%= link_to 'RETOUR', root_path, class:'btn-return' %>
-      <%= link_to "DELETE",
-            service_path(@service),
-            method: :delete,
-            data: { confirm: "Are you sure?" } %>
     </div>
   </div>
 </div>

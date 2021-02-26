@@ -1,2 +1,119 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+
+<div class="section-home">
+  <div class="home">
+    <div class="home-body">
+      <%= render 'shared/svg' %>
+      <%= image_tag 'bell-orange.png', id:"bell" %>
+      <p>Aide à la personne<br>Prestations à domicile<br>sur mesure</p>
+    </div>
+    <div class="home-footer">
+      <%= image_tag 'sap-change.png', id:"sap" %>
+      <%= image_tag 'paysdegex.png', id:"paysdegex" %>
+    </div>
+  </div>
+</div>
+
+<div class="section-services" id="services">
+  <div class="title-section title-services">
+    <h2>SERVICES PROPOSÉS</h2>
+  </div>
+  <div class="subtitle text-center">
+    <p>Vous n'avez pas le temps, l'envie ou la patience pour certaines tâches de la vie quotidienne. </p>
+    <h4 id="ben">Benoît est à votre service !</h4>
+  </div>
+  <div class="services-wrapper">
+    <% @services.each do |service|%>
+      <%= link_to service_path(service), class:'service-card-link' do %>
+        <div class="service-card">
+          <div class="service-icone">
+            <%= cl_image_tag service.logo.key, height: 80, width: 80 %>
+          </div>
+          <div class="service-name">
+            <h4><%= service.name %></h4>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>
+
+<div class="section-coronavirus" id="coronavirus">
+  <div class="coronavirus">
+    <div class="title-section title-coronavirus">
+      <h2>SPECIAL covid-19</h2>
+    </div>
+    <div class="coronavirus-text">
+      <p>Des mesures de protection ont été mises en place permettant des prestations à domicile dans le respect des règles d'hygiène préconisées par l'Etat et notamment des gestes barrières.</p>
+    </div>
+  </div>
+</div>
+
+<div class="section-info" id="info">
+  <div class="info-wrapper">
+    <div class="text-center">
+      <h3>LES AVANTAGES</h3>
+    </div>
+    <div class="box-2">
+      <p>Les prestations de services d'aide à domicile vous permettent de bénéficier d'un avantage fiscal équivalent à 50% de vos dépenses, dans la limite des plafonds autorisés.</p>
+      <div class="info-icones">
+        <%= image_tag 'sap.png', id:"icone-sap" %>
+        <%= image_tag 'reduction.png', id:"icone-reduction" %>
+      </div>
+      <p>En janvier 2022, vous recevrez une attestation fiscale reprenant la nature des prestations fournies, les sommes réglées pour l'année précédente. Cette attestation et les factures reçues seront à conserver comme justificatif pour votre déclaration de revenus 2021.</p>
+    </div>
+    <div class="separateur text-center">
+      <%= image_tag 'separateur.png' %>
+    </div>
+    <div class="text-center">
+      <h3>LES TARIFS</h3>
+      <p>Les tarifs varient selon la prestation de service demandée ainsi que de la fréquence d'intervention.</p>
+      <div class="separateur text-center">
+        <%= image_tag 'separateur.png' %>
+      </div>
+      <p><strong>Un devis gratuit</strong> personnalisé vous sera remis pour toute prestation ou ensemble de prestations dont le prix total est supérieur ou égal à 100 €, ou sur demande si le prix est inférieur.</p>
+    </div>
+    <div class="text-center text-muted" id="declaration">
+      Les Services de Benoît font l'objet d'une déclaration auprès de l'Organisme des Services à la Personne n°: SAP751342247
+    </div>
+  </div>
+</div>
+
+<div class="section-apropos" id="apropos">
+  <div class="title-section title-apropos">
+    <h2>À PROPOS DE BENOÎT</h2>
+  </div>
+  <div class="apropos">
+    <%= image_tag 'polaroid.png' %>
+    <div class="profile">
+      <p>Plus de 20 années d'expérience, à l'écoute et au service d'une clientèle française et internationale à la réception d'hôtels et dans les services aux expatriés.</p>
+    </div>
+  </div>
+</div>
+
+<div class="section-contact" id="contact">
+  <div class="title-section title-contact">
+    <h2>CONTACTER MOI</h2>
+  </div>
+  <div class="form-wrapper">
+    <div class="contact-infos">
+      <div class="phone">
+        <i class="fas fa-phone"></i>
+        09.72.53.28.80
+      </div>
+      <div class="mail">
+        <i class="far fa-envelope"></i>
+        benoit@servicesdebenoit.com
+      </div>
+    </div>
+    <form action="https://formspree.io/xeqrpboq" method="POST" >
+      <input type="text" name="name" id="full-name" autocomplete="off" required placeholder="Nom" />
+      <input type="email" name="_replyto" autocomplete="off" required placeholder="Email"/>
+      <input type="phone" name="phone" autocomplete="off" required placeholder="Téléphone"/>
+      <textarea row="3" name="message" id="message" required placeholder="Message..."></textarea>
+      <input type="hidden" name="_subject" id="email-subject" value="Formulaire SAP">
+      <input type="submit" value="ENVOYER" class="btn-contact">
+    </form>
+  </div>
+</div>
+
+
