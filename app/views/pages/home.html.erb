@@ -4,7 +4,9 @@
     <div class="home-body">
       <%= render 'shared/svg' %>
       <%= image_tag 'bell-orange.png', id:"bell" %>
-      <p>Aide à la personne<br>Prestations à domicile<br>sur mesure</p>
+      <div class="home-body-text" data-aos="zoom-in-up" data-aos-delay="2000">
+        <h1>Aide à la personne<br>Prestations à domicile<br>sur mesure</h1>
+      </div>
     </div>
     <div class="home-footer">
       <%= image_tag 'sap-change.png', id:"sap" %>
@@ -14,7 +16,7 @@
 </div>
 
 <div class="section-services" id="services">
-  <div class="title-section title-services">
+  <div class="title-section title-services" data-aos="zoom-in-down">
     <h2>SERVICES PROPOSÉS</h2>
   </div>
   <div class="subtitle text-center">
@@ -24,7 +26,7 @@
   <div class="services-wrapper">
     <% @services.each do |service|%>
       <%= link_to service_path(service), class:'service-card-link' do %>
-        <div class="service-card">
+        <div class="service-card" data-aos="flip-up" data-aos-once="true" >
           <div class="service-icone">
             <%= cl_image_tag service.logo.key, height: 80, width: 80 %>
           </div>
@@ -37,12 +39,12 @@
   </div>
 </div>
 
-<div class="section-coronavirus" id="coronavirus">
+<div class="section-coronavirus" id="coronavirus" >
   <div class="coronavirus">
-    <div class="title-section title-coronavirus">
+    <div class="title-section title-coronavirus" data-aos="zoom-in-down">
       <h2>SPECIAL covid-19</h2>
     </div>
-    <div class="coronavirus-text">
+    <div class="coronavirus-text" data-aos="zoom-out">
       <p>Des mesures de protection ont été mises en place permettant des prestations à domicile dans le respect des règles d'hygiène préconisées par l'Etat et notamment des gestes barrières.</p>
     </div>
   </div>
@@ -50,7 +52,7 @@
 
 <div class="section-info" id="info">
   <div class="info-wrapper">
-    <div class="text-center">
+    <div class="text-center" data-aos="zoom-in-down" data-aos-once="true">
       <h3>LES AVANTAGES</h3>
     </div>
     <div class="box-2">
@@ -64,8 +66,10 @@
     <div class="separateur text-center">
       <%= image_tag 'separateur.png' %>
     </div>
-    <div class="text-center">
+    <div class="text-center" data-aos="zoom-in-down" data-aos-once="true">
       <h3>LES TARIFS</h3>
+    </div>
+    <div class="text-center" >
       <p>Les tarifs varient selon la prestation de service demandée ainsi que de la fréquence d'intervention.</p>
       <div class="separateur text-center">
         <%= image_tag 'separateur.png' %>
@@ -79,7 +83,7 @@
 </div>
 
 <div class="section-apropos" id="apropos">
-  <div class="title-section title-apropos">
+  <div class="title-section title-apropos" data-aos="zoom-in-down">
     <h2>À PROPOS DE BENOÎT</h2>
   </div>
   <div class="apropos">
@@ -91,7 +95,7 @@
 </div>
 
 <div class="section-contact" id="contact">
-  <div class="title-section title-contact">
+  <div class="title-section title-contact" data-aos="zoom-in-down">
     <h2>CONTACTER MOI</h2>
   </div>
   <div class="form-wrapper">

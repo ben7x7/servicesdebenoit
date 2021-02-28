@@ -24,6 +24,11 @@ require("channels")
 
 // External imports
 import "bootstrap";
+import { initAos } from '../components/init_aos';
+
+ // You can also use <link> for styles
+// ..
+
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
@@ -31,4 +36,5 @@ import "bootstrap";
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
+  initAos();
 });
