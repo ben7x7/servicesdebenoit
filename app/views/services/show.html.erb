@@ -13,18 +13,17 @@
       <div class="service-examples">
         <p class="option"><%= @service.option %></p>
         <p><%= @service.presample %></p>
-
         <ul>
           <% @service.activities.each do |activity| %>
             <li><%= activity.sample %></li>
           <% end %>
         </ul>
         <br>
-        <p><%= @service.conditions %>: <strong><%= @service.plafond %></strong>.</p>
+        <p><%= @service.conditions %> <strong><%= @service.plafond %></strong>.</p>
       </div>
     </div>
     <div class="text-center">
-      <%= link_to 'RETOUR', root_path, class:'btn-return' %>
+      <%= link_to 'RETOUR', root_path(anchor: 'services'), class:'btn-return' %>
     </div>
   </div>
 </div>

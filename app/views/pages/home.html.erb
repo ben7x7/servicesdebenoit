@@ -16,7 +16,7 @@
 </div>
 
 <div class="section-services" id="services">
-  <div class="title-section title-services" data-aos="zoom-in-down">
+  <div class="title-section title-services" data-aos="zoom-in-down" >
     <h2>SERVICES PROPOSÉS</h2>
   </div>
   <div class="subtitle text-center">
@@ -26,7 +26,7 @@
   <div class="services-wrapper">
     <% @services.each do |service|%>
       <%= link_to service_path(service), class:'service-card-link' do %>
-        <div class="service-card" data-aos="flip-up" data-aos-once="true" >
+        <div class="service-card" data-aos="flip-down" data-aos-delay="500">
           <div class="service-icone">
             <%= cl_image_tag service.logo.key, height: 80, width: 80 %>
           </div>
@@ -52,7 +52,7 @@
 
 <div class="section-info" id="info">
   <div class="info-wrapper">
-    <div class="text-center" data-aos="zoom-in-down" data-aos-once="true">
+    <div class="text-center" data-aos="zoom-in-down">
       <h3>LES AVANTAGES</h3>
     </div>
     <div class="box-2">
@@ -66,7 +66,7 @@
     <div class="separateur text-center">
       <%= image_tag 'separateur.png' %>
     </div>
-    <div class="text-center" data-aos="zoom-in-down" data-aos-once="true">
+    <div class="text-center" data-aos="zoom-in-down">
       <h3>LES TARIFS</h3>
     </div>
     <div class="text-center" >
@@ -88,7 +88,7 @@
   </div>
   <div class="apropos">
     <%= image_tag 'polaroid.png' %>
-    <div class="profile">
+    <div class="profile" data-aos="zoom-out">
       <p>Plus de 20 années d'expérience, à l'écoute et au service d'une clientèle française et internationale à la réception d'hôtels et dans les services aux expatriés.</p>
     </div>
   </div>
@@ -100,11 +100,11 @@
   </div>
   <div class="form-wrapper">
     <div class="contact-infos">
-      <div class="phone">
+      <div class="phone" data-aos="fade-right" data-aos-delay="400">
         <i class="fas fa-phone"></i>
         09.72.53.28.80
       </div>
-      <div class="mail">
+      <div class="mail" data-aos="fade-left" data-aos-delay="600">
         <i class="far fa-envelope"></i>
         benoit@servicesdebenoit.com
       </div>

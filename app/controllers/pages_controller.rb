@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   def home
-    @services = Service.all
+    @services = Service.all.sort
   end
 
   def cookys

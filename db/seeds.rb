@@ -20,7 +20,7 @@ service1 = Service.create!(
   definition: 'L\'assistance administrative à domicile couvre des activités touchant aux formalités administratives quotidiennes.',
   option: '',
   presample: 'Elle couvre des activités telles que l\'appui et l\'aide:',
-  conditions: 'Plafond annuel des dépenses ouvrant droit au crédit d\'impôt',
+  conditions: 'Plafond annuel des dépenses ouvrant droit au crédit d\'impôt:',
   plafond: '12000 €uros'
 )
 service1.logo.attach(
@@ -40,7 +40,7 @@ service2 = Service.create!(
   definition: 'La prestation comprend l\'initiation ou la formation au fonctionnement du matériel informatique et aux logiciels non professionnels en vue de permettre leur utilisation courante.',
   option: 'PC, Mac, tablette, smartphone',
   presample: 'La prestation comprend aussi, le cas échéant:',
-  conditions: 'Plafond annuel des dépenses ouvrant droit au crédit d\'impôt',
+  conditions: 'Plafond annuel des dépenses ouvrant droit au crédit d\'impôt:',
   plafond: '3000 €uros'
 )
 service2.logo.attach(
@@ -60,7 +60,7 @@ service3 = Service.create!(
   definition: 'L\'activité de petit bricolage concerne des prestations de bricolage élémentaire qui ne nécessitent pas un savoir faire particulier dans un temps restreint.',
   option: '',
   presample: 'Elle concerne des prestations telles que:',
-  conditions: 'Plafond annuel des dépenses ouvrant droit au crédit d\'impôt',
+  conditions: 'Plafond annuel des dépenses ouvrant droit au crédit d\'impôt:',
   plafond: '500 €uros'
 )
 service3.logo.attach(
@@ -69,7 +69,7 @@ service3.logo.attach(
   content_type: 'logo/png'
 )
 service3.image.attach(
-  io: URI.open('https://res.cloudinary.com/bessiere/image/upload/v1613800208/petit_bricolage.png') ,
+  io: URI.open('https://res.cloudinary.com/bessiere/image/upload/v1613800208/petit_bricolage.png'),
   filename: 'petit_bricolage.png',
   content_type: 'image/png'
 )
@@ -80,7 +80,7 @@ service4 = Service.create!(
   definition: 'Cette activité s\'inscrit dans un objectif de facilitation de la vie quotidienne des personnes.',
   option: '',
   presample: 'Il peut donc s\'agir de:',
-  conditions: 'La prestation de livraison de courses ne peut être exercée qu\'à condition d\'être comprise dans une offre globale de services incluant une activité exercée au domicile.',
+  conditions: 'La prestation de livraison de courses ne peut être exercée qu\'à condition d\'être comprise dans une offre globale de services incluant une activité exercée au domicile',
   plafond: ''
 )
 service4.logo.attach(
@@ -89,7 +89,7 @@ service4.logo.attach(
   content_type: 'logo/png'
 )
 service4.image.attach(
-  io: URI.open('https://res.cloudinary.com/bessiere/image/upload/v1613800227/courses_livraisons.png') ,
+  io: URI.open('https://res.cloudinary.com/bessiere/image/upload/v1613800227/courses_livraisons.png'),
   filename: 'courses_livraisons.png',
   content_type: 'image/png'
 )
@@ -100,7 +100,7 @@ service5 = Service.create!(
   definition: 'Cette prestation n\'est pas un service de sécurité, avec vidéosurveillance, rondes et alarme. Il s\'agit d\'une vigilance simple de l\'habitation principale ou secondaire pendant l\'absence de son occupant habituel.',
   option: '',
   presample: 'La prestation comprend selon le cas échéant:',
-  conditions: 'Plafond annuel des dépenses ouvrant droit au crédit d\'impôt',
+  conditions: 'Plafond annuel des dépenses ouvrant droit au crédit d\'impôt:',
   plafond: '12000 €uros'
 )
 service5.logo.attach(
