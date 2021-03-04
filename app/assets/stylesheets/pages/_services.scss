@@ -43,9 +43,14 @@
 .service-examples {
   padding-bottom: 40px;
 }
+.option {
+  text-align: center;
+  color: $orange;
+  font-style: italic;
+}
 .btn-return {
   padding: 10px 20px;
-  border: solid 2px $dark-gray;
+  border: solid 2px $orange;
   border-radius: 5px;
   color: $orange;
   font-weight: bold;

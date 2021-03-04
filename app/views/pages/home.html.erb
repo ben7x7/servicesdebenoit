@@ -26,7 +26,7 @@
   <div class="services-wrapper">
     <% @services.each do |service|%>
       <%= link_to service_path(service), class:'service-card-link' do %>
-        <div class="service-card" data-aos="flip-down" data-aos-delay="500">
+        <div class="service-card" data-aos="flip-down">
           <div class="service-icone">
             <%= cl_image_tag service.logo.key, height: 80, width: 80 %>
           </div>
