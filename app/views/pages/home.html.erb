@@ -1,4 +1,3 @@
-
 <div class="section-home">
   <div class="home">
     <div class="home-body">
@@ -14,7 +13,6 @@
     </div>
   </div>
 </div>
-
 <div class="section-services" id="services">
   <div class="title-section title-services" data-aos="zoom-in-down" >
     <h2>SERVICES PROPOSÉS</h2>
@@ -26,19 +24,19 @@
   <div class="services-wrapper">
     <% @services.each do |service|%>
       <%= link_to service_path(service), class:'service-card-link' do %>
-        <div class="service-card" data-aos="flip-down">
+        <div class="service-card">
           <div class="service-icone">
-            <%= cl_image_tag service.logo.key, height: 80, width: 80 %>
+            <%= cl_image_tag service.logo.key, height: 50 %>
           </div>
           <div class="service-name">
             <h4><%= service.name %></h4>
           </div>
+          <p>En savoir +</p>
         </div>
       <% end %>
     <% end %>
   </div>
 </div>
-
 <div class="section-coronavirus" id="coronavirus" >
   <div class="coronavirus">
     <div class="title-section title-coronavirus" data-aos="zoom-in-down">
@@ -49,51 +47,99 @@
     </div>
   </div>
 </div>
-
 <div class="section-info" id="info">
+  <div class="title-section title-service" data-aos="zoom-in-down" >
+    <h2>SERVICES A LA PERSONNE / SAP</h2>
+  </div>
   <div class="info-wrapper">
-    <div class="text-center" data-aos="zoom-in-down">
-      <h3>LES AVANTAGES</h3>
-    </div>
-    <div class="box-2">
-      <p>Les prestations de services d'aide à domicile vous permettent de bénéficier d'un avantage fiscal équivalent à 50% de vos dépenses, dans la limite des plafonds autorisés.</p>
-      <div class="info-icones">
-        <%= image_tag 'sap.png', id:"icone-sap" %>
-        <%= image_tag 'reduction.png', id:"icone-reduction" %>
+    <div class="info-box">
+      <div class="info-box-title">
+        <div class="corner"></div>
+        <div class="cornerbis"></div>
+        <div class="title-wrapper">
+          <h3>LES AVANTAGES</h3>
+        </div>
       </div>
-      <p>En janvier 2022, vous recevrez une attestation fiscale reprenant la nature des prestations fournies, les sommes réglées pour l'année précédente. Cette attestation et les factures reçues seront à conserver comme justificatif pour votre déclaration de revenus 2021.</p>
-    </div>
-    <div class="separateur text-center">
-      <%= image_tag 'separateur.png' %>
-    </div>
-    <div class="text-center" data-aos="zoom-in-down">
-      <h3>LES TARIFS</h3>
-    </div>
-    <div class="text-center" >
-      <p>Les tarifs varient selon la prestation de service demandée ainsi que de la fréquence d'intervention.</p>
-      <div class="separateur text-center">
-        <%= image_tag 'separateur.png' %>
+      <div class="info-box-img">
+        <%= image_tag 'sap.png', id:"icone-sap", height: 200 %>
       </div>
-      <p><strong>Un devis gratuit</strong> personnalisé vous sera remis pour toute prestation ou ensemble de prestations dont le prix total est supérieur ou égal à 100 €, ou sur demande si le prix est inférieur.</p>
+      <div class="info-text">
+        <p>
+          En faisant appel aux Services de Benoît, Les dépenses que vous engagez à ce titre vous donnent droit à un crédit d’impôt de 50%, dans la limite des plafonds autorisés. <br>
+          Jusqu’à présent, vous bénéficiiez de votre crédit d’impôt l’année suivant les dépenses, au moment de votre déclaration auprès de l’administration fiscale…
+        </p>
+      </div>
+    </div>
+    <div class="info-box">
+      <div class="info-box-title">
+        <div class="corner"></div>
+        <div class="cornerbis"></div>
+        <div class="title-wrapper">
+          <h3>L'AVANCE IMMÉDIATE</h3>
+        </div>
+      </div>
+      <div class="info-box-img">
+        <%= image_tag 'urssaf.webp', height: 150 %>
+      </div>
+      <div class="info-text">
+        <p>
+          Ce service vous est proposé par l’URSSAF. Il est optionnel et gratuit.  Il vous permet ainsi de bénéficier en temps réel de votre avantage fiscale de 50% lors du paiement de votre facture. <br>
+          Pour en profiter, il vous suffit simplement de demander à votre prestataire de services préféré, Benoît, de vous y inscrire.
+        </p>
+        <%= link_to '+ de détails sur Avance Immédiate', faq_path, class:"faq-link" %>
+      </div>
+    </div>
+    <div class="info-box">
+      <div class="info-box-title">
+        <div class="corner"></div>
+        <div class="cornerbis"></div>
+        <div class="title-wrapper">
+          <h3>DÉCLARATION FISCALE</h3>
+        </div>
+      </div>
+      <div class="info-box-img">
+        <%= image_tag 'impots.webp', height: 150 %>
+      </div>
+      <div class="info-text">
+        <p>
+          Au mois de janvier, vous recevrez une attestation fiscale reprenant la nature des prestations fournies, les sommes réglées pour l'année précédente. Cette attestation et les factures reçues seront à conserver précieusement comme justificatifs pour votre déclaration de revenus.
+        </p>
+      </div>
+    </div>
+    <div class="info-box">
+      <div class="info-box-title">
+        <div class="corner"></div>
+        <div class="cornerbis"></div>
+        <div class="title-wrapper">
+          <h3>TARIFS & DEVIS</h3>
+        </div>
+      </div>
+      <div class="info-box-img">
+        <%= image_tag 'bell-orange.png', height: 150 %>
+      </div>
+      <div class="info-text">
+        <p>
+          Les tarifs varient selon la prestation de service demandée et la fréquence d’intervention. <br>
+          Un devis gratuit personnalisé vous sera remis pour toute prestation ou ensemble de prestations dont le prix total est supérieur ou égal à 100 €, ou sur demande si le prix est inférieur.
+        </p>
+      </div>
     </div>
     <div class="text-center text-muted" id="declaration">
       Les Services de Benoît font l'objet d'une déclaration auprès de l'Organisme des Services à la Personne n°: SAP751342247
     </div>
   </div>
 </div>
-
 <div class="section-apropos" id="apropos">
-  <div class="title-section title-apropos" data-aos="zoom-in-down">
-    <h2>À PROPOS DE BENOÎT</h2>
-  </div>
   <div class="apropos">
+    <div class="title-section title-apropos">
+      <h2>À PROPOS DE BENOÎT</h2>
+    </div>
     <%= image_tag 'polaroid.png' %>
     <div class="profile" data-aos="zoom-out">
       <p>Plus de 20 années d'expérience, à l'écoute et au service d'une clientèle française et internationale à la réception d'hôtels et dans les services aux expatriés.</p>
     </div>
   </div>
 </div>
-
 <div class="section-contact" id="contact">
   <div class="title-section title-contact" data-aos="zoom-in-down">
     <h2>CONTACTER MOI</h2>
