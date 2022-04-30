@@ -6,6 +6,9 @@
   padding: 50px 0;
   margin: 0 auto;
 }
+.legales-section h4 {
+  color: $orange;
+}
 .legales-content {
   padding: 50px 10px;
 }
@@ -16,7 +19,6 @@
   border-radius: 5px;
   color: $light-gray;
   font-weight: bold;
-  text-decoration: none;
   text-align: center;
 }
 .legales-link-return a:hover {

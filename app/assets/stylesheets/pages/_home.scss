@@ -11,7 +11,7 @@ h3 {
   font-size: 2rem !important;
 }
 h4 {
-  font-size: 1.5rem !important;
+  font-size: 1.75rem !important;
   font-weight: 400 !important;
 }
 
@@ -133,9 +133,6 @@ h4#ben {
 }
 
 
-
-
-
 //  ***********************  section COVID  ******************************
 
 .section-coronavirus {
@@ -150,10 +147,13 @@ h4#ben {
   padding: 50px 15px;
 }
 
-//  ***********************  section INFO  *******************************
+//  ***********************  section SAP  *******************************
 
 .section-info {
   background-color: #FFFFFF;
+}
+.title-sap {
+  margin-bottom: 80px;
 }
 #info p {
   text-align: justify;
@@ -242,7 +242,6 @@ a.faq-link:hover {
 #declaration {
   font-size: 12px;
   font-style: italic;
-  margin-top: 50px;
   text-align: center;
 }
 
