@@ -11,4 +11,7 @@ class PagesController < ApplicationController
 
   def confidentialites
   end
+
+  def faq
+  end
 end

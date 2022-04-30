@@ -5,20 +5,16 @@
   box-sizing: border-box;
 }
 h2 {
-  font-size: 32px !important;
-  font-weight: 800 !important;
+  font-size: 3rem !important;
 }
 h3 {
-  font-size: 28px !important;
-  font-weight: 700 !important;
+  font-size: 2rem !important;
 }
 h4 {
-  font-size: 24px !important;
+  font-size: 1.5rem !important;
   font-weight: 400 !important;
 }
-p {
-  font-size: 18px !important;
-}
+
 .section-services,
 .section-apropos,
 .section-contact,
@@ -60,6 +56,7 @@ p {
   h1 {
     font-size: 24px !important;
     font-style: italic;
+    font-family: 'poppins', sans-serif;
     color: white;
   }
 }
@@ -78,7 +75,7 @@ p {
 //  ***********************  section SERVICES  ***************************
 
 .section-services {
-  background-color: #F9F7F7;
+  background-color: $white;
   background-size: cover;
 }
 #services p {
@@ -97,7 +94,7 @@ h4#ben {
   flex-wrap: wrap;
   margin: 50px auto;
   justify-content: center;
-  max-width: 900px;
+  max-width: 700px;
 }
 .service-card-link {
   color: $dark-gray;
@@ -109,28 +106,35 @@ h4#ben {
 }
 .service-card {
   display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  width: 375px;
-  height: 120px;
-  padding: 10px 20px;
+  text-align: center;
+  width: 200px;
+  height: 250px;
+  padding: 25px 20px;
   margin: 10px;
-  border: solid 1px $light-gray;
-  border-radius: 5px;
-  background-color: white;
-  box-shadow:
-  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-  0 12.5px 10px rgba(0, 0, 0, 0.06),
-  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-  0 100px 80px rgba(0, 0, 0, 0.12);
+  border: none;
+  border-radius: 15px;
+  background-color: $white;
+  box-shadow: 6px 6px 40px rgba(0, 0, 0, 0.2);
 }
 .service-card:hover {
-  box-shadow: none;
+
 }
-.service-icone img {
-  margin-right: 20px;
+.service-name h4 {
+  font-family: 'Bebas Neue', cursive;
+  text-transform: uppercase;
+  font-size: 2rem;
 }
+.service-card p {
+  color: $orange !important;
+  font-style: italic !important;
+}
+
+
+
+
 
 //  ***********************  section COVID  ******************************
 
@@ -151,44 +155,92 @@ h4#ben {
 .section-info {
   background-color: #FFFFFF;
 }
-.logos-info {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
 #info p {
   text-align: justify;
 }
 .info-wrapper {
-  max-width: 700px;
+  max-width: 800px;
   margin: 0 auto;
 }
-.box-2 {
-  text-align: center;
+.info-box {
+  position: relative;
+  display: grid;
+  grid-template-columns: 367px 1fr;
+  grid-template-rows: 200px 1fr;
+  border: 1px solid $black;
+  border-radius: 15px;
+  box-shadow: 6px 6px 40px rgba(0,0,0,0.2);
+  padding: 2rem 3rem;
+  margin-bottom: 75px;
 }
-.info-icones {
+.info-box-title {
+  position: absolute;
+  left: -1rem;
+  top: -1rem;
+  width: 367px;
+  height: 225px;
+}
+.title-wrapper {
+  position: absolute;
+  bottom: 50%;
+  left: -3rem;
+  width: 429px;
+  height: 80px;
+  background-color: $orange;
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  padding-left: 70px;
+  transform: rotate(-30deg);
+  clip-path: polygon(10.6% 0%, 0% 100%, 100% 100%, 68% 0%);
+  -webkit-clip-path: polygon(10.6% 0%, 0% 100%, 100% 100%, 68% 0%);
 }
-#icone-sap {
-  width: 150px;
+.corner {
+  position: absolute;
+  left: 0.1rem;
+  bottom: 4%;
+  width: 0.9rem;
+  height: 1rem;
+  background-color: #865209;
+  border-bottom-left-radius: 2px;
 }
-#icone-reduction {
-  width: 100px;
-  height: 100px;
-  margin-left: 20px;
+.cornerbis {
+  position: absolute;
+  top: 0;
+  left: calc(100% - 2rem);
+  width: 2.3rem;
+  height: 1rem;
+  background-color: #865209;
+  border-top-right-radius: 2px;
 }
-.separateur {
-  text-align: center;
-  margin-bottom: 30px;
+
+.title-wrapper h3 {
+  margin-bottom: 0px;
+  text-shadow: 1px -1px 0px $white;
 }
-.separateur img {
-  width: 375px;
-  margin: 30px 0;
+.info-box-img {
+  grid-column: 2 / 3;
+  display: flex;
+  justify-content: center;
 }
+.info-text {
+  grid-row: 2 / 3;
+  grid-column: 1 / 3;
+}
+a.faq-link {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: $orange;
+}
+a.faq-link:hover {
+  text-decoration: none;
+  font-weight: bold;
+  color: $orange;
+}
+
+
 #declaration {
-  font-size: 15px;
+  font-size: 12px;
   font-style: italic;
   margin-top: 50px;
   text-align: center;
@@ -197,17 +249,28 @@ h4#ben {
 //  ***********************  section A PROPOS  ***************************
 
 .section-apropos {
-  background-color: $cream;
+  background-color: $light-gray;
   background-size: cover;
 }
 .apropos {
+  background-color: $light-gray;
   max-width: 700px;
   margin: 0 auto;
   padding: 50px 15px;
   text-align: center;
+  border-radius: 15px;
+  box-shadow:
+    -5px -5px 9px rgba(155,155,155,0.2),
+    5px 5px 9px rgba(0,0,0,0.2),
+    inset -13px -13px 20px rgba(0,0,0,0.1),
+    inset 13px 13px 20px rgba(255,255,255,1);
 }
 .apropos img {
   width: 400px;
+}
+.profile {
+  max-width: 500px;
+  margin: auto;
 }
 .profile p {
   text-align: center;
@@ -338,8 +401,8 @@ textarea {
     justify-content: space-between;
     padding: 20px 50px;
   }
-  .separateur img {
-    width: 250px;
+  .info-box {
+    padding: 2rem 1rem;
   }
   .apropos img {
     width: 300px;
@@ -352,4 +415,3 @@ textarea {
   }
 }
 
-// Specific CSS for your home-page
