@@ -1,24 +1,57 @@
 <div class="footer">
   <div class="footer-header">
-    <div class="legales-links">
-      <%= link_to 'Cookies', cookys_path %>
-      <span class="separateur-footer">|</span>
-      <%= link_to 'Mentions Légales', mentions_path %>
-      <span class="separateur-footer">|</span>
-      <%= link_to 'Politique de Confidentialité', confidentialites_path %>
-      <span class="separateur-footer">|</span>
-      <%= link_to 'Avance Immédiate', faq_path %>
+    <h2>LES SERVICES DE BENOIT</h2>
+    <%= image_tag 'footer-bell.webp' %>
+  </div>
+   <div class="footer-body">
+      <%= image_tag 'sap-change.png', id:"sap" %>
+      <%= image_tag 'paysdegex.png', id:"paysdegex" %>
     </div>
-    <div class="social-links">
-      <%= link_to "http://www.facebook.com/mypage", target: :_blank do %>
-        <i class="fab fa-facebook fa-2x"></i>
-      <% end %>
-      <%= link_to "http://www.instagram.com/mypage", target: :_blank do %>
-        <i class="fab fa-instagram fa-2x"></i>
-      <% end %>
+  <div class="footer-links">
+    <div class="footer-mentions">
+      <p>LIENS UTILES :</p>
+      <hr class="tiret">
+      <%= link_to 'Avance Immédiate', faq_path %>
+      <%= link_to 'Cookies', cookys_path %>
+      <%= link_to 'Mentions Légales', mentions_path %>
+      <%= link_to 'Politique de Confidentialité', confidentialites_path %>
+    </div>
+    <div class="footer-sap">
+      <p>LES SERVICES DE BENOIT :</p>
+      <hr class="tiret">
+      <%= link_to 'Assistance Administrative', service_path(1) %>
+      <%= link_to 'Assistance Informatique', service_path(2) %>
+      <%= link_to 'Petit Bricolage', service_path(3) %>
+      <%= link_to 'Courses & Livraisons', service_path(4)  %>
+      <%= link_to 'Vigilance du Domicile', service_path(5) %>
+    </div>
+    <div class="footer-contact">
+      <p>CONTACT</p>
+      <hr class="tiret">
+      <div class="footer-contact-details">
+        <i class="fas fa-phone"></i>
+        <p>09 72 53 28 80</p>
+      </div>
+      <br>
+      <div class="footer-contact-details">
+        <i class="far fa-envelope"></i>
+        <p>benoit@servicesdebenoit.com</p>
+      </div>
+    </div>
+    <div class="footer-social">
+      <p>RÉSEAUX SOCIAUX</p>
+      <hr class="tiret">
+      <div class="footer-social-icons">
+        <%= link_to "http://www.facebook.com/mypage", target: :_blank do %>
+          <i class="fab fa-facebook fa-2x fa-footer"></i>
+        <% end %>
+        <%= link_to "http://www.instagram.com/mypage", target: :_blank do %>
+          <i class="fab fa-instagram fa-2x fa-footer"></i>
+        <% end %>
+      </div>
     </div>
   </div>
-  <div class="footer-footer text-center">
+  <div class="copyright text-center">
     ©LesServicesDeBenoit2022
   </div>
 </div>
