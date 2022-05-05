@@ -24,12 +24,12 @@ service1 = Service.create!(
   plafond: '12000 €uros'
 )
 service1.logo.attach(
-  io: URI.open('https://res.cloudinary.com/bessiere/image/upload/v1650860186/services_benoit/logo_administration.png'),
+  io: URI.open('https://res.cloudinary.com/bessiere/image/upload/v1650861351/logo_administrative.png'),
   filename: 'logo_administratif.png',
   content_type: 'logo/png'
 )
 service1.image.attach(
-  io: URI.open('https://res.cloudinary.com/bessiere/image/upload/v1613800150/services_benoit/assistance_administrative.png') ,
+  io: URI.open('https://res.cloudinary.com/bessiere/image/upload/v1650861353/assistance_administrative.png') ,
   filename: 'assistance_administrative.png',
   content_type: 'image/png'
 )
@@ -44,12 +44,12 @@ service2 = Service.create!(
   plafond: '3000 €uros'
 )
 service2.logo.attach(
-  io: URI.open('https://res.cloudinary.com/bessiere/image/upload/v1650860191/services_benoit/logo_informatique.png'),
+  io: URI.open('https://res.cloudinary.com/bessiere/image/upload/v1650861355/logo_informatique.png'),
   filename: 'logo_informatique.png',
   content_type: 'logo/png'
 )
 service2.image.attach(
-  io: URI.open('https://res.cloudinary.com/bessiere/image/upload/v1613800220/services_benoit/assitance_informatique.png') ,
+  io: URI.open('https://res.cloudinary.com/bessiere/image/upload/v1650861356/assistance_informatique.png') ,
   filename: 'assistance_informatique.png',
   content_type: 'image/png'
 )
@@ -64,12 +64,12 @@ service3 = Service.create!(
   plafond: '500 €uros'
 )
 service3.logo.attach(
-  io: URI.open('https://res.cloudinary.com/bessiere/image/upload/v1650860196/services_benoit/logo_bricolage.png'),
+  io: URI.open('https://res.cloudinary.com/bessiere/image/upload/v1650861357/logo_bricolage.png'),
   filename: 'logo_bricolage.png',
   content_type: 'logo/png'
 )
 service3.image.attach(
-  io: URI.open('https://res.cloudinary.com/bessiere/image/upload/v1613800208/services_benoit/petit_bricolage.png'),
+  io: URI.open('https://res.cloudinary.com/bessiere/image/upload/v1650861359/petit_bricolage.png'),
   filename: 'petit_bricolage.png',
   content_type: 'image/png'
 )
@@ -84,12 +84,12 @@ service4 = Service.create!(
   plafond: ''
 )
 service4.logo.attach(
-  io: URI.open('https://res.cloudinary.com/bessiere/image/upload/v1650860201/services_benoit/logo_courses.png'),
+  io: URI.open('https://res.cloudinary.com/bessiere/image/upload/v1650861360/logo_courses.png'),
   filename: 'logo_courses.png',
   content_type: 'logo/png'
 )
 service4.image.attach(
-  io: URI.open('https://res.cloudinary.com/bessiere/image/upload/v1613800227/services_benoit/courses_livraisons.png'),
+  io: URI.open('https://res.cloudinary.com/bessiere/image/upload/v1650861362/courses_livraisons.png'),
   filename: 'courses_livraisons.png',
   content_type: 'image/png'
 )
@@ -104,12 +104,12 @@ service5 = Service.create!(
   plafond: '12000 €uros'
 )
 service5.logo.attach(
-  io: URI.open('https://res.cloudinary.com/bessiere/image/upload/v1650860207/services_benoit/logo_vigilance.png'),
+  io: URI.open('https://res.cloudinary.com/bessiere/image/upload/v1650861364/logo_vigilance.png'),
   filename: 'logo_vigilance.png',
   content_type: 'logo/png'
 )
 service5.image.attach(
-  io: URI.open('https://res.cloudinary.com/bessiere/image/upload/v1613800233/services_benoit/vigilance_du_domicile.png') ,
+  io: URI.open('https://res.cloudinary.com/bessiere/image/upload/v1650861365/vigilance_du_domicile.png') ,
   filename: 'vigilance_du_domicile.png',
   content_type: 'image/png'
 )
