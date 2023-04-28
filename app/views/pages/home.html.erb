@@ -1,15 +1,15 @@
 <div class="section-home">
   <div class="home">
     <div class="home-body">
-      <%= render 'shared/svg' %>
-      <%= image_tag 'bell-orange.png', id:"bell" %>
+      <h1>LES SERVICES DE BENOIT</h1>
+      <%= image_tag 'bell-orange.webp', id:"bell" %>
       <div class="home-body-text" data-aos="zoom-in-up" data-aos-delay="2000">
-        <h1>Aide à la personne<br>Prestations à domicile<br>sur mesure</h1>
+        <h2>Aide à la personne<br>Prestations à domicile<br>sur mesure</h2>
       </div>
     </div>
     <div class="home-footer">
-      <%= image_tag 'sap-change.png', id:"sap" %>
-      <%= image_tag 'paysdegex.png', id:"paysdegex" %>
+      <%= image_tag 'sap-b&w.svg', id:"sap", alt: "Logo SAP" %>
+      <%= image_tag 'pays-de-gex.webp', id:"paysdegex", alt: "logo du Pays de Gex" %>
     </div>
   </div>
 </div>
@@ -61,7 +61,7 @@
         </div>
       </div>
       <div class="info-box-img">
-        <%= image_tag 'sap.png', id:"icone-sap" %>
+        <%= image_tag 'logo-sap.svg', alt:"logo service à la personne", loading:"lazy", width:320, height:150 %>
       </div>
       <div class="info-text">
         <p>
@@ -79,7 +79,7 @@
         </div>
       </div>
       <div class="info-box-img">
-        <%= image_tag 'urssaf.webp' %>
+        <%= image_tag 'urssaf-AI.webp', alt:"avance immédiate URSSAF", loading:"lazy", width:320, height:150 %>
       </div>
       <div class="info-text">
         <p>
@@ -98,7 +98,7 @@
         </div>
       </div>
       <div class="info-box-img">
-        <%= image_tag 'impots.webp' %>
+        <%= image_tag 'declaration.webp', alt:"Fiche de déclaration d'impôts", loading:"lazy", width:320, height:150 %>
       </div>
       <div class="info-text">
         <p>
@@ -115,7 +115,7 @@
         </div>
       </div>
       <div class="info-box-img">
-        <%= image_tag 'bell-orange.png' %>
+        <%= image_tag 'sap-bell.webp', alt:"Logo Services de Benoit", loading:"lazy", width:320, height:150 %>
       </div>
       <div class="info-text">
         <p>
@@ -134,7 +134,7 @@
     <div class="title-section title-apropos">
       <h2>À PROPOS DE BENOÎT</h2>
     </div>
-    <%= image_tag 'polaroid.png' %>
+    <%= image_tag 'portrait.webp', alt:"portrait", loading:"lazy", width:400, height:487 %>
     <div class="profile" data-aos="zoom-out">
       <p>Plus de 20 années d'expérience, à l'écoute et au service d'une clientèle française et internationale à la réception d'hôtels et dans les services aux expatriés.</p>
     </div>
@@ -147,11 +147,11 @@
   <div class="form-wrapper">
     <div class="contact-infos">
       <div class="phone" data-aos="fade-right" data-aos-delay="400">
-        <i class="fas fa-phone"></i>
+        <%= image_tag 'phone-orange.svg', alt:"icon phone", height:16, width:12, loading:"lazy" %>
         09.72.53.28.80
       </div>
       <div class="mail" data-aos="fade-left" data-aos-delay="600">
-        <i class="far fa-envelope"></i>
+        <%= image_tag 'envelop-orange.svg', alt:"icon envelop", height:16, width:22, loading:"lazy" %>
         benoit@servicesdebenoit.com
       </div>
     </div>
@@ -165,5 +165,5 @@
     </form>
   </div>
 </div>
-<div class="transition"></div>
+
 

@@ -55,8 +55,7 @@
   display: flex;
   align-items: center;
 }
-.footer-contact-details i {
-  color: $footer;
+.footer-contact-details > img {
   margin-right: 0.7rem;
 }
 .footer-contact-details p {
@@ -75,8 +74,7 @@ hr.tiret {
   display: flex;
   justify-content: flex-start;
 }
-.fa-footer {
-  color: $footer;
+.footer-social-icons  > img {
   margin: 2rem .75rem;
 }
 .copyright {

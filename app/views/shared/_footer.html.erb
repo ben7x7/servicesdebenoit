@@ -1,11 +1,11 @@
 <div class="footer">
   <div class="footer-header">
     <h2>LES SERVICES DE BENOIT</h2>
-    <%= image_tag 'footer-bell.webp' %>
+    <%= image_tag 'footerbell.webp', alt:"footer-logo", loading:"lazy", width:200, height:200 %>
   </div>
    <div class="footer-body">
-      <%= image_tag 'sap-change.png', id:"sap" %>
-      <%= image_tag 'paysdegex.png', id:"paysdegex" %>
+      <%= image_tag 'sap-b&w.svg', id:"sap", alt:"footer logo sap", loading:"lazy", height:70, width:85 %>
+      <%= image_tag 'paysdegex.png', id:"paysdegex", alt:"footer logo pdg", loading:"lazy", height:40, width:172 %>
     </div>
   <div class="footer-links">
     <div class="footer-mentions">
@@ -29,12 +29,12 @@
       <p>CONTACT</p>
       <hr class="tiret">
       <div class="footer-contact-details">
-        <i class="fas fa-phone"></i>
+        <%= image_tag 'phone-gray.svg', alt:"footer icon phone", height:16, width:12, loading:"lazy" %>
         <p>09 72 53 28 80</p>
       </div>
       <br>
       <div class="footer-contact-details">
-        <i class="far fa-envelope"></i>
+        <%= image_tag 'envelop-gray.svg', alt:"footer icon envelop", height:16, width:22, loading:"lazy" %>
         <p>benoit@servicesdebenoit.com</p>
       </div>
     </div>
@@ -43,16 +43,16 @@
       <hr class="tiret">
       <div class="footer-social-icons">
         <%= link_to "http://www.facebook.com/mypage", target: :_blank do %>
-          <i class="fab fa-facebook fa-2x fa-footer"></i>
+          <%= image_tag 'facebook-gray.svg', alt:"icon Facebook", loading:"lazy", height:32, width:32 %>
         <% end %>
         <%= link_to "http://www.instagram.com/mypage", target: :_blank do %>
-          <i class="fab fa-instagram fa-2x fa-footer"></i>
+          <%= image_tag 'instagram-gray.svg', alt:"icon Instagram", loading:"lazy", height:32, width:32 %>
         <% end %>
       </div>
     </div>
   </div>
   <div class="copyright text-center">
-    ©LesServicesDeBenoit2022
+    ©LesServicesDeBenoit2023
   </div>
 </div>
 

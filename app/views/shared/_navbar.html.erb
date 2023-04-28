@@ -1,12 +1,12 @@
 <nav class="navbar my-navbar navbar-expand-lg">
   <div class="navbar-brand">
     <%= link_to root_path, class:"navbar-brand" do %>
-      <%= image_tag 'favbellicon.png', id:"nav-logo" %>
+      <%= image_tag 'favbellicon.webp', id:"nav-logo", alt:"Les Services de Benoit", height:30, width:36 %>
       <span id="brand">LES SERVICES DE BENOÎT</span>
     <% end %>
   </div>
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <i class="fas fa-bars"></i>
+    <%= image_tag 'icon-bars.svg', id:"nav-logo", alt:"icon menu", height:48, width:48 %>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav ml-auto">

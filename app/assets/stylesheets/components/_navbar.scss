@@ -19,8 +19,7 @@
   align-items: center;
 }
 #nav-logo {
-  padding:0 10px 0 10px;
-  height: 30px;
+  padding:0 10px;
 }
 #brand {
   font-family: 'Bebas Neue', cursive;
@@ -42,7 +41,7 @@ a.nav-link:hover {
   font-weight: bold;
   border-bottom: solid 3px $orange;
 }
-button.navbar-toggler {
-  color: #F1E4D3 !important;
+.navbar-toggler {
+  margin-right: 2rem;
 }
 
