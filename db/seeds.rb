@@ -24,14 +24,14 @@ service1 = Service.create!(
   plafond: '12000 €uros'
 )
 service1.logo.attach(
-  io: URI.open('https://res.cloudinary.com/bessiere/image/upload/v1650861351/logo_administrative.png'),
-  filename: 'logo_administratif.png',
-  content_type: 'logo/png'
+  io: URI.open('https://res.cloudinary.com/bessiere/image/upload/v1683564481/sap/logo-assistance-administrative.svg'),
+  filename: 'logo-assistance-administrative.svg',
+  content_type: 'logo/svg'
 )
 service1.image.attach(
-  io: URI.open('https://res.cloudinary.com/bessiere/image/upload/v1650861353/assistance_administrative.png') ,
-  filename: 'assistance_administrative.png',
-  content_type: 'image/png'
+  io: URI.open('https://res.cloudinary.com/bessiere/image/upload/v1683564527/sap/assistance-administrative.webp') ,
+  filename: 'assistance-administrative.webp',
+  content_type: 'image/webp'
 )
 
 service2 = Service.create!(
@@ -44,14 +44,14 @@ service2 = Service.create!(
   plafond: '3000 €uros'
 )
 service2.logo.attach(
-  io: URI.open('https://res.cloudinary.com/bessiere/image/upload/v1650861355/logo_informatique.png'),
-  filename: 'logo_informatique.png',
-  content_type: 'logo/png'
+  io: URI.open('https://res.cloudinary.com/bessiere/image/upload/v1683564481/sap/logo-assistance-informatique.svg'),
+  filename: 'logo-assistance-informatique.svg',
+  content_type: 'logo/svg'
 )
 service2.image.attach(
-  io: URI.open('https://res.cloudinary.com/bessiere/image/upload/v1650861356/assistance_informatique.png') ,
-  filename: 'assistance_informatique.png',
-  content_type: 'image/png'
+  io: URI.open('https://res.cloudinary.com/bessiere/image/upload/v1683564527/sap/assistance-informatique.webp') ,
+  filename: 'assistance-informatique.webp',
+  content_type: 'image/webp'
 )
 
 service3 = Service.create!(
@@ -64,14 +64,14 @@ service3 = Service.create!(
   plafond: '500 €uros'
 )
 service3.logo.attach(
-  io: URI.open('https://res.cloudinary.com/bessiere/image/upload/v1650861357/logo_bricolage.png'),
-  filename: 'logo_bricolage.png',
-  content_type: 'logo/png'
+  io: URI.open('https://res.cloudinary.com/bessiere/image/upload/v1683564481/sap/logo-bricolage.svg'),
+  filename: 'logo-bricolage.svg',
+  content_type: 'logo/svg'
 )
 service3.image.attach(
-  io: URI.open('https://res.cloudinary.com/bessiere/image/upload/v1650861359/petit_bricolage.png'),
-  filename: 'petit_bricolage.png',
-  content_type: 'image/png'
+  io: URI.open('https://res.cloudinary.com/bessiere/image/upload/v1683564527/sap/bricolage.webp'),
+  filename: 'bricolage.webp',
+  content_type: 'image/webp'
 )
 
 service4 = Service.create!(
@@ -84,14 +84,14 @@ service4 = Service.create!(
   plafond: ''
 )
 service4.logo.attach(
-  io: URI.open('https://res.cloudinary.com/bessiere/image/upload/v1650861360/logo_courses.png'),
-  filename: 'logo_courses.png',
-  content_type: 'logo/png'
+  io: URI.open('https://res.cloudinary.com/bessiere/image/upload/v1683564482/sap/logo-courses.svg'),
+  filename: 'logo-courses.svg',
+  content_type: 'logo/svg'
 )
 service4.image.attach(
-  io: URI.open('https://res.cloudinary.com/bessiere/image/upload/v1650861362/courses_livraisons.png'),
-  filename: 'courses_livraisons.png',
-  content_type: 'image/png'
+  io: URI.open('https://res.cloudinary.com/bessiere/image/upload/v1683564527/sap/courses.webp'),
+  filename: 'courses.webp',
+  content_type: 'image/webp'
 )
 
 service5 = Service.create!(
@@ -104,14 +104,14 @@ service5 = Service.create!(
   plafond: '12000 €uros'
 )
 service5.logo.attach(
-  io: URI.open('https://res.cloudinary.com/bessiere/image/upload/v1650861364/logo_vigilance.png'),
-  filename: 'logo_vigilance.png',
-  content_type: 'logo/png'
+  io: URI.open('https://res.cloudinary.com/bessiere/image/upload/v1683564482/sap/logo-vigilance.svg'),
+  filename: 'logo-vigilance.svg',
+  content_type: 'logo/webp'
 )
 service5.image.attach(
-  io: URI.open('https://res.cloudinary.com/bessiere/image/upload/v1650861365/vigilance_du_domicile.png') ,
-  filename: 'vigilance_du_domicile.png',
-  content_type: 'image/png'
+  io: URI.open('https://res.cloudinary.com/bessiere/image/upload/v1683564527/sap/vigilance.webp') ,
+  filename: 'vigilance.webp',
+  content_type: 'image/webp'
 )
 
 activity1 = Activity.create!(sample:'Au traitement et classement de documents;', service: service1)

@@ -4,12 +4,12 @@
       <h1>LES SERVICES DE BENOIT</h1>
       <%= image_tag 'bell-orange.webp', id:"bell" %>
       <div class="home-body-text" data-aos="zoom-in-up" data-aos-delay="2000">
-        <h2>Aide à la personne<br>Prestations à domicile<br>sur mesure</h2>
+        <p>Aide à la personne<br>Prestations à domicile<br>sur mesure</p>
       </div>
     </div>
     <div class="home-footer">
-      <%= image_tag 'sap-b&w.svg', id:"sap", alt: "Logo SAP" %>
-      <%= image_tag 'pays-de-gex.webp', id:"paysdegex", alt: "logo du Pays de Gex" %>
+      <%= image_tag 'sap-b&w.svg', id:"sap", alt: "Logo SAP", height:"70px", width:"auto" %>
+      <%= image_tag 'pays-de-gex.webp', id:"paysdegex", alt: "logo du Pays de Gex", height:"50px", width:"auto" %>
     </div>
   </div>
 </div>
@@ -19,7 +19,7 @@
   </div>
   <div class="subtitle text-center">
     <p>Vous n'avez pas le temps, l'envie ou la patience pour certaines tâches de la vie quotidienne. </p>
-    <h4 id="ben">Benoît est à votre service !</h4>
+    <span id="ben">Benoît est à votre service !</span>
   </div>
   <div class="services-wrapper">
     <% @services.each do |service|%>
@@ -61,7 +61,7 @@
         </div>
       </div>
       <div class="info-box-img">
-        <%= image_tag 'logo-sap.svg', alt:"logo service à la personne", loading:"lazy", width:320, height:150 %>
+        <%= image_tag 'logo_sap.svg', alt:"logo service à la personne", loading:"lazy", width:280, height:131 %>
       </div>
       <div class="info-text">
         <p>
@@ -79,7 +79,7 @@
         </div>
       </div>
       <div class="info-box-img">
-        <%= image_tag 'urssaf-AI.webp', alt:"avance immédiate URSSAF", loading:"lazy", width:320, height:150 %>
+        <%= image_tag 'urssaf-AI.webp', alt:"avance immédiate URSSAF", loading:"lazy", width:280, height:131 %>
       </div>
       <div class="info-text">
         <p>
@@ -98,7 +98,7 @@
         </div>
       </div>
       <div class="info-box-img">
-        <%= image_tag 'declaration.webp', alt:"Fiche de déclaration d'impôts", loading:"lazy", width:320, height:150 %>
+        <%= image_tag 'impots.webp', alt:"Fiche de déclaration d'impôts", loading:"lazy", width:280, height:131 %>
       </div>
       <div class="info-text">
         <p>
@@ -115,7 +115,7 @@
         </div>
       </div>
       <div class="info-box-img">
-        <%= image_tag 'sap-bell.webp', alt:"Logo Services de Benoit", loading:"lazy", width:320, height:150 %>
+        <%= image_tag 'logo_bell.webp', alt:"Logo Services de Benoit", loading:"lazy", width:280, height:131 %>
       </div>
       <div class="info-text">
         <p>
@@ -134,7 +134,7 @@
     <div class="title-section title-apropos">
       <h2>À PROPOS DE BENOÎT</h2>
     </div>
-    <%= image_tag 'portrait.webp', alt:"portrait", loading:"lazy", width:400, height:487 %>
+    <%= image_tag 'pola-portrait.webp', alt:"portrait", loading:"lazy", width:"400px", height:"439px" %>
     <div class="profile" data-aos="zoom-out">
       <p>Plus de 20 années d'expérience, à l'écoute et au service d'une clientèle française et internationale à la réception d'hôtels et dans les services aux expatriés.</p>
     </div>

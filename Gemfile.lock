@@ -91,8 +91,6 @@ GEM
     erubi (1.10.0)
     execjs (2.8.1)
     ffi (1.15.5)
-    font-awesome-sass (6.1.1)
-      sassc (~> 2.0)
     friendly_id (5.4.2)
       activerecord (>= 4.0.0)
     globalid (1.0.0)
@@ -253,7 +251,6 @@ DEPENDENCIES
   capybara (>= 2.15)
   cloudinary
   dotenv-rails
-  font-awesome-sass
   friendly_id
   jbuilder (~> 2.7)
   listen (~> 3.2)
@@ -277,4 +274,4 @@ RUBY VERSION
    ruby 2.7.3p183
 
 BUNDLED WITH
-   2.2.25
+   2.3.22

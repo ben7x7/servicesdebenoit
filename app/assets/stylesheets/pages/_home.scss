@@ -1,8 +1,11 @@
-// Specific CSS for your home-page
+// *********************** MAIN ************************************
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+h1, h2, h3, h4 {
+  font-family: 'Bebas Neue', cursive;
 }
 h2 {
   font-size: 3rem !important;
@@ -25,7 +28,233 @@ h4 {
   margin: 0 auto;
 }
 
+
+// *********************** NAVBAR ************************************
+
+.my-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #393939;
+  height: 70px;
+  position: sticky;
+  top: 0;
+  margin: 0 auto;
+  padding: 0 1rem;
+  z-index: 1000;
+}
+.my-navbar .navbar-collapse {
+  flex-grow: 0;
+}
+.navbar-brand {
+  padding-left: 40px;
+  display: flex;
+}
+#nav-logo {
+  padding:0 10px;
+}
+#brand {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 24px;
+  color: #E68C0E;
+}
+.nav-link {
+  letter-spacing: 2px;
+  color: #F4F4F4;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+}
+a.nav-link {
+  margin-right: 40px;
+}
+a.nav-link:hover {
+  color: #E68C0E;
+  font-weight: bold;
+  border-bottom: solid 3px #E68C0E;
+}
+
+
+
+//  ***********************  ALERT & ERRORS *******************************
+
+
+.alert {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  z-index: 1000;
+}
+.container-errors {
+  background-color: #393939;
+}
+.wrapper-error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 90vh;
+  max-width: 400px;
+  margin: auto;
+}
+.error-title h1 {
+  font-family: 'Rammetto One', cursive;
+  font-size: 144px;
+  margin-bottom: 0px;
+  line-height: 0.9;
+  color: rgba(231, 141, 13, 1);
+    -webkit-text-fill-color: #393939;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(231, 141, 13, 1);
+}
+.error-text h2 {
+  font-family: 'Vast Shadow', cursive;
+  font-size: 32px;
+  color: white;
+  margin-bottom: 100px;
+}
+.btn-error {
+  text-decoration: none;
+  color: rgba(231, 141, 13, 1);
+  border: 1px solid rgba(231, 141, 13, 1);
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-weight: bold;
+}
+.btn-error:hover {
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: rgba(231, 141, 13, 1);
+  font-weight: bold;
+}
+
+
+//  ***********************  LEGALES  *******************************
+
+
+.container-legales {
+  color: #F4F4F4;
+}
+.legales-section {
+  max-width: 900px;
+  padding: 50px 0;
+  margin: 0 auto;
+}
+.legales-section h4 {
+  color: #E68C0E;
+}
+.legales-content {
+  padding: 50px 10px;
+}
+.legales-link-return a {
+  margin: 0 auto;
+  padding: 10px 20px;
+  border: solid 2px #E68C0E;
+  border-radius: 5px;
+  color: #F4F4F4;
+  font-weight: bold;
+  text-align: center;
+}
+.legales-link-return a:hover {
+  background-color: transparent;
+  color: #E68C0E;
+}
+
+
+//  ***********************  FOOTER  *******************************
+
+
+.footer {
+  background-color: #000000;
+  padding: 80px 15px 15px 15px;
+}
+.footer-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-header h2 {
+  color: #9B9B9B;
+  text-align: center;
+}
+.footer-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 60px 5px;
+  max-width: 350px;
+  margin: auto;
+}
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.footer-links a{
+  font-size: 14px;
+  color: #9B9B9B;
+  text-decoration: none;
+}
+.footer-links a:hover {
+  color: #E68C0E;
+  text-decoration: none;
+}
+.footer-mentions,
+.footer-sap,
+.footer-contact,
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 3rem;
+}
+.footer-mentions p,
+.footer-sap p,
+.footer-contact p,
+.footer-social p {
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #9B9B9B;
+}
+.footer-contact-details {
+  display: flex;
+  align-items: center;
+}
+.footer-contact-details > img {
+  margin-right: 0.7rem;
+}
+.footer-contact-details p {
+  margin-bottom: 0px;
+  color: #9B9B9B;
+  font-size: 14px;
+  font-weight: 400;
+}
+hr.tiret {
+  width: 60px;
+  border: 2px solid #E68C0E;
+  margin-top: 0px;
+  opacity: 1;
+}
+.footer-social-icons {
+  display: flex;
+  justify-content: flex-start;
+}
+.footer-social-icons a  > img {
+  margin: 2rem .75rem;
+}
+.copyright {
+  width: 100%;
+  font-size: 12px;
+  color: #E68C0E;
+  opacity: .7;
+  margin-top: 40px;
+}
+
+
 //  ***********************  section HOME  *******************************
+
 
 .section-home {
   background-color: #393939;
@@ -63,10 +292,9 @@ h4 {
 }
 .home-body > h1 {
   font-size: 44px;
-  font-family: 'Bebas Neue', cursive;
-  color: $white;
+  color: #FFFFFF;
 }
-.home-body > h2 {
+.home-body-text > p {
   font-size: 24px !important;
   font-style: italic;
   font-family: 'poppins', sans-serif;
@@ -78,19 +306,22 @@ h4 {
   align-items: center;
 }
 
+
 //  ***********************  section SERVICES  ***************************
 
+
 .section-services {
-  background-color: $white;
+  background-color: #FFFFFF;
   background-size: cover;
 }
 #services p {
   color: #9B9B9B;
-  margin-bottom: 0 !important;
+  margin-bottom: 1rem !important;
 }
-h4#ben {
+span#ben {
   color: #E68C0E;
-  font-weight: 400 !important;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.5rem;
 }
 #services h4 {
   line-height: 2rem;
@@ -103,11 +334,11 @@ h4#ben {
   max-width: 700px;
 }
 .service-card-link {
-  color: $dark-gray;
+  color: #393939;
   text-decoration: none;
 }
 .service-card-link:hover {
-  color: $dark-gray;
+  color: #393939;
   text-decoration: none;
 }
 .service-card {
@@ -122,7 +353,7 @@ h4#ben {
   margin: 10px;
   border: none;
   border-radius: 15px;
-  background-color: $white;
+  background-color: #FFFFFF;
   box-shadow: 6px 6px 40px rgba(0, 0, 0, 0.2);
 }
 .service-name h4 {
@@ -131,11 +362,13 @@ h4#ben {
   font-size: 2rem;
 }
 .service-card p {
-  color: $orange !important;
+  color: #E68C0E !important;
   font-style: italic !important;
 }
 
+
 //  ***********************  section COVID  ******************************
+
 
 .section-coronavirus {
   text-align: center;
@@ -149,7 +382,9 @@ h4#ben {
   padding: 50px 15px;
 }
 
+
 //  ***********************  section SAP  *******************************
+
 
 .section-info {
   background-color: #FFFFFF;
@@ -163,14 +398,13 @@ h4#ben {
 .info-wrapper {
   max-width: 800px;
   margin: 0 auto;
-  overflow: hidden;
 }
 .info-box {
   position: relative;
   display: grid;
   grid-template-columns: 367px 1fr;
   grid-template-rows: 200px 1fr;
-  border: 1px solid $black;
+  border: 1px solid #000000;
   border-radius: 15px;
   box-shadow: 6px 6px 40px rgba(0,0,0,0.2);
   padding: 2rem 0rem;
@@ -189,7 +423,7 @@ h4#ben {
   left: -3rem;
   width: 429px;
   height: 80px;
-  background-color: $orange;
+  background-color: #E68C0E;
   display: flex;
   align-items: center;
   padding-left: 70px;
@@ -217,7 +451,7 @@ h4#ben {
 }
 .title-wrapper h3 {
   margin-bottom: 0px;
-  text-shadow: 1px -1px 0px $white;
+  text-shadow: 1px -1px 0px #FFFFFF;
 }
 .info-box-img {
   grid-column: 2 / 3;
@@ -234,12 +468,12 @@ a.faq-link {
   display: flex;
   justify-content: center;
   text-decoration: none;
-  color: $orange;
+  color: #E68C0E;
 }
 a.faq-link:hover {
   text-decoration: none;
   font-weight: bold;
-  color: $orange;
+  color: #E68C0E;
 }
 #declaration {
   font-size: 12px;
@@ -247,14 +481,16 @@ a.faq-link:hover {
   text-align: center;
 }
 
+
 //  ***********************  section A PROPOS  ***************************
 
+
 .section-apropos {
-  background-color: $light-gray;
+  background-color: #F4F4F4;
   background-size: cover;
 }
 .apropos {
-  background-color: $light-gray;
+  background-color: #F4F4F4;
   max-width: 700px;
   margin: 0 auto;
   padding: 50px 15px;
@@ -266,10 +502,6 @@ a.faq-link:hover {
     inset -13px -13px 20px rgba(0,0,0,0.1),
     inset 13px 13px 20px rgba(255,255,255,1);
 }
-.apropos img {
-  width: 400px;
-  height: 487px;
-}
 .profile {
   max-width: 500px;
   margin: auto;
@@ -278,10 +510,12 @@ a.faq-link:hover {
   text-align: center;
 }
 
+
 //  ***********************  section CONTACT  ****************************
 
+
 .section-contact {
-  background-image: url('https://res.cloudinary.com/bessiere/image/upload/v1595606967/Background/map-world.webp');
+  background-image: url('https://res.cloudinary.com/bessiere/image/upload/v1683552675/Background/map-world.webp');
   background-size: cover;
   width: 100%;
   display: flex;
@@ -291,9 +525,6 @@ a.faq-link:hover {
 }
 #contact {
   background-color: #393939;
-}
-#contact img {
-  height: 100vh;
 }
 #contact h2 {
   color: #FFFFFF;
@@ -319,12 +550,12 @@ form {
   align-items: center;
 }
 input, textarea {
-  background-color: $dark-gray;
+  background-color: #393939;
   border-radius: 5px;
   width: 100%;
   padding: 10px 20px;
   margin-bottom: 8px;
-  color: $light-gray;
+  color: #F4F4F4;
   outline-color: #E68C0E !important;
 }
 input {
@@ -353,34 +584,30 @@ textarea {
   height: 100px;
   background: linear-gradient(180deg, #393939 50%, #000000 100%);
 }
-/*******************************
-         MEDIA LAPTOP
-*******************************/
+
+
+/*******************************  MEDIA LAPTOP   *******************************/
+
 
 @media screen and (max-width: 992px){
-  .navbar-brand {
-    padding-left: 15px;
-  }
+
   .navbar-nav {
     width: 100%;
     justify-content: space-around;
     align-items: center;
     background-color: #F1E4D3;
   }
-  .navbar-toggler {
-    margin-right: 30px;
-  }
   a.nav-link {
-    color: $dark-gray;
+    color: #393939;
     width: 100%;
     margin-right: 0px;
     display: flex;
     justify-content: center;
   }
   a.nav-link:hover {
-    background-color: $orange;
+    background-color: #E68C0E;
     border-bottom: none;
-    color: $dark-gray;
+    color: #393939;
   }
   .footer-links {
     display: grid;
@@ -411,9 +638,10 @@ textarea {
   }
 }
 
-/*******************************
-         MEDIA TABLETS
-*******************************/
+
+/*******************************  MEDIA TABLETS  *******************************/
+
+
 @media screen and (max-width: 800px){
   .info-box {
     display: grid;
@@ -433,28 +661,29 @@ textarea {
   }
 }
 
-/*******************************
-         MEDIA PHONES
-*******************************/
+/*******************************  MEDIA PHONES  *******************************/
+
 @media screen and (max-width: 576px){
+  .navbar-brand {
+    padding-left: 0px;
+  }
+
   .home-body {
     width: 100%;
   }
   .home-footer {
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     padding: 20px 50px;
   }
   .info-box {
     display: flex;
     flex-direction: column;
     padding-top: 150px;
+    overflow: hidden;
   }
   .info-text {
     padding: 0 1rem;
-  }
-  .apropos img {
-    width: 300px;
-    height: 365px;
   }
   .form-wrapper {
     width: 100%;
@@ -487,7 +716,17 @@ textarea {
   .footer-sap,
   .footer-contact,
   .footer-social {
-    margin-left: 5rem;
+    margin-left: 3rem;
+  }
+}
+
+@media screen and (max-width: 400px){
+  #brand {
+    display: none;
+  }
+  .apropos img {
+    width: 250px;
+    height: auto;
   }
 }
 

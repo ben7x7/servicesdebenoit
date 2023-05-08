@@ -1,5 +1,5 @@
 .container-service {
-  background-color: $white;
+  background-color: #FFFFFF;
   padding: 30px 0;
   min-height: 100vh;
 }
@@ -7,7 +7,7 @@
   margin: 0 auto;
   padding: 40px 40px;
   max-width: 800px;
-  background-color: white;
+  background-color: #FFFFFF;
   border-radius: 15px;
   box-shadow: 6px 6px 40px rgba(0, 0, 0, 0.2);
 }
@@ -24,8 +24,8 @@
 .service-details {
   margin: 30px 0 ;
   padding: 30px 0 14px 0;
-  border-top: solid 3px $orange;
-  border-bottom: solid 3px $orange;
+  border-top: solid 3px #E68C0E;
+  border-bottom: solid 3px #E68C0E;
   color: #9B9B9B;
   font-style: italic;
   font-weight: bold;
@@ -42,20 +42,19 @@
 }
 .option {
   text-align: center;
-  color: $orange;
+  color: #E68C0E;
   font-style: italic;
 }
 .btn-return {
   padding: 10px 20px;
-  border: solid 2px $orange;
+  border: solid 2px #E68C0E;
   border-radius: 5px;
-  color: $orange;
+  color: #E68C0E;
   font-weight: bold;
   text-decoration: none;
 }
 .btn-return:hover {
-  background-color: $orange;
+  background-color: #E68C0E;
   color: white;
   text-decoration: none;
 }
-
